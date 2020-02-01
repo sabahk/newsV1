@@ -20,7 +20,8 @@ public class newsService {
   }
 
   public Source getSourceInfo(){
-    return restTemplate.getForObject("https://newsapi.org/v2/sources?apiKey=" + apiKey, Source.class);
+        return restTemplate.getForObject("https://newsapi.org/v2/sources?apiKey=" + apiKey, Source.class);
+
   }
 
   public Everything getEverything(String queryParam){
