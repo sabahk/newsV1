@@ -1,24 +1,16 @@
 package com.news.model;
 
+import java.util.List;
+
 public class Source {
-    String name;
-    String id;
-
-    public String getId() {
-        return id;
+    public List<Sources> getSources() {
+        return sources;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSources(List<Sources> sources) {
+        this.sources = sources;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    List<Sources> sources;
 
 }
